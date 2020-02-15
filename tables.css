@@ -1,0 +1,45 @@
+.table {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background: radial-gradient(circle, rgba(10,129,0,1) 0%, rgba(10,129,0,1) 43%, rgba(6,83,0,1) 60%, rgba(0,0,0,1) 62%, rgba(15,200,0,1) 64%, rgba(10,128,0,1) 78%);
+    transition: all 200ms;
+    font-size: 24px;
+    line-height: 140px;
+    text-align: center;
+    text-shadow: 2px 0px 8px white, 0px 2px 8px white,-2px 0px 8px white, 0px -2px 8px white;
+}
+
+.side {
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+
+.divider {
+    height: 225px;
+}
+
+#tablesContainer {
+    background-color: gainsboro;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .side {
+      top: 0;
+    }
+    .divider {
+        height: 0px;
+    }
+  }
+
+.table:hover {
+    transform: scale(1.1);
+}
