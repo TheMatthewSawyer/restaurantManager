@@ -29,6 +29,10 @@ app.get("/api/reserve", function(req, res) {
 
 app.post("/api/tables", function(req, res) {
   const newCustomer = req.body;
+
+  newCustomer.name.replace(/\s+/g, "").toLowerCase();
+  tables.push(newCustomer);
+  res.json(newCustomer);
 });
 
 app.listen(PORT, function() {
