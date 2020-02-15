@@ -51,7 +51,7 @@
                                 <label for="UniqueID">Unique ID</label>
                                 <input type="id" class="form-control" id="id" aria-describedby="idHelp">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary customerid">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -65,6 +65,25 @@
        
 
     </div>
+    <script type="text/javascript">
+        // Question: What does this code do?
+        $("#add-btn").on("click", function(event) {
+          event.preventDefault();
+          const newCharacter = {
+            name: $("#name").val().trim(),
+            phonenumber: $("#phonenumber").val().trim(),
+            email: $("#email").val().trim(),
+            customerid: $("#customerid").val().trim()
+          };
+    
+          // Question: What does this code do??
+          $.post("/api/characters", newCharacter)
+            .then(function(data) {
+              console.log("add.html", data);
+              alert("Adding character...");
+            });
+        });
+      </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
