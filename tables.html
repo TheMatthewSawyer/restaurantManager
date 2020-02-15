@@ -20,7 +20,7 @@
         
         <div class='row'>
             <div class='col-md-12'>
-                <h1 class='text-center'>Currently Seated:</h1>
+                <h1 class='text-center mainHeader'>Currently Seated: <span id='curSeated'>0</span>/5</h1>
             </div>
         </div>
 
@@ -65,13 +65,54 @@
 
         <div class='row'>
             <div class='col-md-12'>
-                <h1 class='text-center'>Wait List:</h1>
+                <h1 class='text-center waitHeader'>Wait List:</h1>
             </div>
         </div>
 
+        <div class='row'>
 
-
+            <div class='col-md-12'></div>
+            
+        </div>
 
     </div>
 </body>
 </html>
+
+
+
+
+<!-- const fs = require("fs");
+
+const savedRestaurantList = [];
+
+class RestaurantList  {
+    constructor(id, name, email, phone) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+}
+
+
+
+function save() {
+    fs.savefile("/savedRestaurantList.txt") {
+
+    }
+}
+
+function load() {
+    fs.readfile("/savedRestaurantList.txt") {
+
+    }
+}
+
+
+function newReservation() {
+    let addItem = new RestaurantList(id, name, email, phone);
+    savedRestaurantList.push(addItem);
+} -->
+
+

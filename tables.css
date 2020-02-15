@@ -1,3 +1,14 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 40px rgba(128, 128, 128, 0.25);
+}
+
 .table {
     height: 150px;
     width: 150px;
@@ -12,6 +23,10 @@
     text-shadow: 2px 0px 8px white, 0px 2px 8px white,-2px 0px 8px white, 0px -2px 8px white;
 }
 
+.full {
+    background: radial-gradient(circle, rgba(129,0,0,1) 0%, rgba(129,0,0,1) 43%, rgba(83,0,0,1) 60%, rgba(0,0,0,1) 62%, rgba(200,0,0,1) 64%, rgba(128,0,0,1) 78%);
+}
+
 .side {
     position: relative;
     top: 150px;
@@ -22,14 +37,16 @@
     height: 225px;
 }
 
-#tablesContainer {
-    background-color: gainsboro;
-    border: 3px solid black;
-    border-radius: 10px;
+#tablesContainer, .mainHeader, .waitHeader {
     margin: 15px;
     padding: 15px;
 }
 
+.mainHeader, .waitHeader {
+    border: 10px solid grey;
+    border-style: inset;
+    background-color: rgb(226, 226, 226);
+}
 
 @media only screen and (max-width: 767px) {
     .side {
