@@ -61,3 +61,12 @@ body {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@keyframes full {
+    from {
+        background: radial-gradient(circle, rgba(10,129,0,1) 0%, rgba(10,129,0,1) 43%, rgba(6,83,0,1) 60%, rgba(0,0,0,1) 62%, rgba(15,200,0,1) 64%, rgba(10,128,0,1) 78%);
+    }
+    to {
+        background: radial-gradient(circle, rgba(129,0,0,1) 0%, rgba(129,0,0,1) 43%, rgba(83,0,0,1) 60%, rgba(0,0,0,1) 62%, rgba(200,0,0,1) 64%, rgba(128,0,0,1) 78%);
+    }
+}
